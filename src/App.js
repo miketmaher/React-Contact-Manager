@@ -11,39 +11,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 class App extends Component {
-
-  state = {
-    test: 'test'
-  }
-
-  // componentDidMount() {
-  //   console.log('Component did mount');
-  // }
-
-  // componentWillMount() {
-  //   console.log('Component Will mount');
-  // }
-
-  // componentDidUpdate() {
-  //   console.log('Component did update');
-  // }
-
-  // componentWillUpdate() {
-  //   console.log('Component will update');
-  // }
-
-  // componentWillReceiveProps(nextProps, nextState) {
-  //   console.log('Props received');
-  // }
-
-  // static getDerivedStateFromProps(nextProps, prevState) {
-  //   return null;
-  // }
-
-  // getSnapshotBeforeUpdate(prevProps, prevState) {
-
-  // }
-
   render() {
     return (
       <Provider>
