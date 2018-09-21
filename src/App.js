@@ -5,11 +5,45 @@ import AddContact from './components/Contact/AddContact';
 import Header from './components/Layout/Header';
 import About from './components/static/About';
 import NotFound from './components/static/NotFound';
+import Test from './components/Test/Test';
 import { Provider } from './context';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 class App extends Component {
+
+  state = {
+    test: 'test'
+  }
+
+  // componentDidMount() {
+  //   console.log('Component did mount');
+  // }
+
+  // componentWillMount() {
+  //   console.log('Component Will mount');
+  // }
+
+  // componentDidUpdate() {
+  //   console.log('Component did update');
+  // }
+
+  // componentWillUpdate() {
+  //   console.log('Component will update');
+  // }
+
+  // componentWillReceiveProps(nextProps, nextState) {
+  //   console.log('Props received');
+  // }
+
+  // static getDerivedStateFromProps(nextProps, prevState) {
+  //   return null;
+  // }
+
+  // getSnapshotBeforeUpdate(prevProps, prevState) {
+
+  // }
+
   render() {
     return (
       <Provider>
@@ -21,6 +55,7 @@ class App extends Component {
                 <Route exact path="/" component={Contacts} />
                 <Route exact path="/about" component={About} />
                 <Route exact path="/contact/add" component={AddContact} />
+                <Route exact path="/test" component={Test} />
                 <Route component={NotFound} />
               </Switch>
             </div>
